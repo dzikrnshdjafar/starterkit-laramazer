@@ -6,7 +6,7 @@
                     <a href="{{ route('dashboard') }}">
                         <div class="d-flex align-items-center tw-gap-2">
                         <img src="{{ asset('utils') }}/logonotext.png" alt="Logo" class="tw-w-8 h-auto">
-                        <span class="fs-5">Inventaris</span>
+                        <span class="fs-6">AdminPanel</span>
                         </div>
                     </a>
                 </div>
@@ -37,7 +37,7 @@
         </div>
         <div class="sidebar-menu">
             <ul class="menu">
-                {{-- <li class="sidebar-title">Menu</li>
+                <li class="sidebar-title">Menu</li>
 
                 @hasrole('Admin')
                 <li class="sidebar-item {{ request()->routeIs('dashboard') ? 'active' : '' }}">
@@ -46,13 +46,16 @@
                         <span>Dashboard</span>
                     </a>
                 </li>
-
+                
                 <li class="sidebar-item {{ request()->routeIs('items.*') ? 'active' : '' }}">
                     <a href="{{ route('items.index') }}" class='sidebar-link'>
                         <i class="fas fa-boxes"></i>
-                        <span>Barang</span>
+                        <span>Item</span>
                     </a>
                 </li>
+                @endhasrole
+
+                {{-- 
 
                 <li class="sidebar-item {{ request()->routeIs('rooms.*') ? 'active' : '' }}">
                     <a href="{{ route('rooms.index') }}" class='sidebar-link'>
@@ -60,7 +63,6 @@
                         <span>Ruangan</span>
                     </a>
                 </li>
-                @endhasrole
 
                 @hasanyrole('Admin|Peminjam')
                 <li class="sidebar-item {{ request()->routeIs('loans.*') ? 'active' : '' }}">
