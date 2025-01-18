@@ -4,7 +4,7 @@
         <!-- Logo -->
         <div class="text-white text-3xl font-bold">
           <a href="#home">
-            <img src="{{ asset('landpage') }}/assets/logo/brand.svg" alt="Brand Logo" class="w-full h-10" />
+            <img src="{{ asset('storage') }}/{{ $appset->brand_image }}" alt="Brand Logo" class="w-full h-10" />
           </a>
         </div>
     

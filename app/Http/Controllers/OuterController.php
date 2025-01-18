@@ -12,8 +12,7 @@ class OuterController extends Controller
         $appset = ApplicationSet::first();
 
         return view('pages.outer.index', [
-            "title" => "Test",
-            "appset" => $appset,
+            "title" => "Test"
         ]);
     }
 }

@@ -4,9 +4,8 @@
             <div class="d-flex justify-content-between align-items-center">
                 <div class="logo">
                     <a href="{{ route('dashboard') }}">
-                        <div class="d-flex align-items-center tw-gap-2">
-                        <img src="{{ asset('utils') }}/logonotext.png" alt="Logo" class="tw-w-8 h-auto">
-                        <span class="fs-6">AdminPanel</span>
+                        <div class="d-flex align-items-center tw-w-10/12">
+                        <img src="{{ asset('storage') }}/{{ $appset->brand_image }}" alt="Logo" class="h-auto">
                         </div>
                     </a>
                 </div>

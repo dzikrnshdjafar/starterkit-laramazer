@@ -32,7 +32,7 @@ class ApplicationSetController extends Controller
         $request->validate([
             'name' => 'required|string|max:255',
             'address' => 'required|string',
-            'brand_image' => 'nullable|image|mimes:jpeg,png,jpg|max:2048',
+            'brand_image' => 'nullable|image|mimes:jpeg,png,jpg,svg|max:2048',
             'email' => 'required|email',
             'phone_number' => 'required|string|max:15',
             'facebook' => 'nullable|string|max:255',
