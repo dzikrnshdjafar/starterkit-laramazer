@@ -53,6 +53,14 @@
                         <span>Item</span>
                     </a>
                 </li>
+                
+                <li class="sidebar-item {{ request()->routeIs('appsets.edit') ? 'active' : '' }}">
+                    <a href="{{ route('appsets.edit') }}" class='sidebar-link'>
+                        <i class="fas fa-cogs"></i>
+                        <span>Edit AppSet</span>
+                    </a>
+                </li>                
+                
                 @endhasrole
 
                 {{-- 
